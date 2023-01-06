@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eigen Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f77dbedeb9.js" crossorigin="anonymous"></script>
+    <script src="//unpkg.com/alpinejs" defer></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body x-data="{open: false}" class="text-white font-poppins pb-12">
+
+    <header class="py-6">
+        <div class="container flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full">
+            <div class="text-lg font-bold">Anass.Bouallouch</div>
+            <div class="hidden md:flex space-x-12 items-center">
+                <a href="#">Home</a>
+                <a href="#work">My Work</a>
+                <a href="#clients">Clients</a>
+                <a href="#"><button class="px-6 py-2 font-bold bg-blue-400 rounded-full">Hire Me</button></a>
+                 </div>
+                 <div class="md:hidden">
+                <svg width="26" height="18" viewBox="0 0 26 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M13 17.5H0.25V14.6667H13V17.5ZM25.75 10.4167H0.25V7.58333H25.75V10.4167ZM25.75 3.33333H13V0.5H25.75V3.33333Z"
+                        fill="white" />
+                </svg>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- this is the container for the first section of the page -->
+    <div class="container mt-16 flex justify-between mx-auto ">
+        <div class="flex flex-wrap lg:ml-20 justify-center md:justify-start  max-w-xl mt-0 md:my-36">
+            <nav class="inline-block lg:mr-31 lg:w-4 fixed left-percentage hidden xl:block">
+                <div class=" -bottom-28 absolute -left-10 transform -translate-x-1/2 space-y-6 mt-36">
+                    <a href="#" class="nav-dot selected-circle block w-7 h-7 rounded-full border-4 border-nav bg-blue-400">
+                        <span class="bg-black px-2 py-1 rounded-md ml-10 opacity-0">Home</span>
+                    </a>
+                    <a href="#work" class="nav-dot block w-7 h-7 rounded-full border-4 border-nav bg-blue-400">
+                        <span class="bg-black px-2 py-1 rounded-md ml-10 opacity-0">Work</span>
+                    </a>
+                    <a href="#clients" class="nav-dot block w-7 h-7 rounded-full border-4 border-nav bg-blue-400">
+                        <span class="bg-black px-2 py-1 rounded-md ml-10 opacity-0">Clients</span>
+                    </a>
+                    <a href="#hire" class="nav-dot block w-7 h-7 rounded-full border-4 border-nav bg-blue-400">
+                        <span class="bg-black px-2 py-1 rounded-md ml-10 opacity-0">Hire</span>
+                    </a>
+                </div>
+            </nav>
+
+            <h1 id="text" class="pl-20 font-bold text-5xl md:text-6xl  lg:text-7xl text-center md:text-left">
+                Building<br> beautiful web experiences.</h1>
+            <!-- hier maak ik de button -->
+            <div class="w-full flex justify-center md:justify-start ml-20">
+                <a href="#"><button class="text-bold px-8 py-2 flex mt-12 bg-blue-400 rounded-full  items-center">View
+                        my Work</button></a>
+            </div>
+        </div>
+        <img src="img/man.png" alt="Man" class="hidden md:block lg:block w-3/4 mt-12 re ">
+    </div>
+
+    <!-- my work section -->
+
+    <div class="container flex flex-wrap">
+        <section class="flex mt-64 flex-wrap justify-between items-center mx-auto ">
+            <section class="w-full">
+                <h2 id="work"
+                    class=" font-bold text-4xl pb-5 secondary-title lg:text-left md:text-center sm:mx-auto text-center">
+                    My work</h2>
+                <p class="flex flex-wrap section-paragraph">I’ve had the pleasure of working with multiple Fortune 500
+                    companies, designing and implementing both frontend and backend.</p>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-6 justify-center ">
+                    <img src="https://images.unsplash.com/photo-1576153192396-180ecef2a715?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80"
+                        class="w-full bg-nav h-36 lg:h-72 object-cover rounded-2xl">
+                    <img src="https://images.unsplash.com/photo-1545235617-9465d2a55698?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80"
+                        class=" rounded-2xl w-full bg-nav h-36 lg:h-72 object-cover">
+                    <img src="https://images.unsplash.com/photo-1586717791821-3f44a563fa4c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1470&q=80"
+                        class="rounded-2xl w-full hidden md:block bg-nav h-36 lg:h-72 object-cover">
+                    <img src="https://images.unsplash.com/photo-1558655146-d09347e92766?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=764&q=80"
+                        class="rounded-2xl w-full hidden md:block bg-nav h-36 lg:h-72 object-cover">
+                    <img src="https://images.unsplash.com/photo-1547119957-637f8679db1e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80"
+                        class="rounded-2xl w-full hidden md:block bg-nav h-36 lg:h-72 object-cover">
+                    <img src="https://images.unsplash.com/photo-1559028012-481c04fa702d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1336&q=80"
+                        class="rounded-2xl w-full hidden md:block bg-nav h-36 lg:h-72 object-cover">
+                    <img src="https://images.unsplash.com/photo-1603969072881-b0fc7f3d77d7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80s"
+                        class="rounded-2xl w-full hidden md:block bg-nav h-36 lg:h-72 object-cover">
+                    <img src="https://images.unsplash.com/photo-1618761714954-0b8cd0026356?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+                        class="rounded-2xl w-full hidden md:block bg-nav h-36 lg:h-72 object-cover">
+                    <img src="https://images.unsplash.com/photo-1545235617-7a424c1a60cc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=880&q=80"
+                        class="rounded-2xl w-full hidden md:block md:col-span-2 lg:col-span-1 bg-nav h-36 lg:h-72 object-cover">
+                </div>
+            </section>
+        </section>
+    </div>
+
+    <!-- Clients -->
+    <div class="container mt-64 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full">
+        <section class="w-full">
+            <h2 id="clients" class="secondary-title text-2xl font-bold mb-2">Clients</h2>
+            <p class="section-paragraph">I’ve had the pleasure of working with multiple Fortune 500 companies, designing
+                and implementing both frontend and backend.</p>
+
+            <!-- Client 1  -->
+            <div class="space-y-12 my-16">
+                <div
+                    class="rounded-3xl w-full border border-nav p-16 lg:px-32 lg:py-20 lg:space-x-32 flex justify-center lg:justify-start flex-wrap lg:flex-nowrap">
+
+                    <!-- Client logo -->
+                    <div class="  mb-6 lg:mb-0">
+                        <svg width="80" height="96" viewBox="0 0 80 96" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M66.6983 92.1599C61.5487 97.2095 55.867 96.4223 50.4513 94.0415C44.6936 91.6127 39.4299 91.4591 33.3492 94.0415C25.7767 97.3439 21.7577 96.3839 17.1972 92.1599C-8.55106 65.3759 -4.75058 24.5759 24.5131 23.0399C31.6105 23.4239 36.5796 27.0047 40.7601 27.3023C46.9739 26.0255 52.9216 22.3679 59.5724 22.8479C67.5629 23.5007 73.5392 26.6879 77.5297 32.4191C61.0926 42.4031 64.9881 64.2911 80.0855 70.4351C77.0641 78.4511 73.1876 86.3711 66.6888 92.2271L66.6983 92.1599ZM40.19 22.7519C39.4204 10.8479 48.9691 1.05595 59.9525 0.0959473C61.4632 13.8239 47.6009 24.0959 40.19 22.7519Z"
+                                fill="white" />
+                        </svg>
+                    </div>
+                    <!-- Client info -->
+                    <div class="flex flex-wrap justify-center text-center lg:text-left lg:block">
+                        <h3 class="text-white text-3xl font-semibold">Apple, inc.</h3>
+
+                        <div class="w-full lg:w-auto flex flex-wrap justify-center lg:justify-start gap-3 mt-6 mb-4">
+                            <div class="badge">UI/UX</div>
+                            <div class="badge">Frontend development</div>
+                        </div>
+                        <p class="text-secondary">I’ve had the pleasure of working with multiple Fortune 500 companies,
+                            designing and implementing both frontend and backend.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Client 2  -->
+            <div class="space-y-12 my-16">
+                <div
+                    class="rounded-3xl w-full border border-nav p-16 lg:px-32 lg:py-20 lg:space-x-32 flex justify-center lg:justify-start flex-wrap lg:flex-nowrap">
+
+                    <!-- Client logo -->
+                    <div class=" content-center  mb-6 lg:mb-0">
+                        <svg id="image1" width="80" height="96" xmlns="http://www.w3.org/2000/svg">
+                            <image href="/img/netflix.png" height="100" width="70" />
+                        </svg>
+                    </div>
+                    <!-- Client info -->
+                    <div class="flex flex-wrap justify-center text-center lg:text-left lg:block">
+                        <h3 class="text-white text-3xl font-semibold">Netflix.</h3>
+                        <div class="w-full lg:w-auto flex flex-wrap justify-center lg:justify-start gap-3 mt-6 mb-4">
+                            <div class="badge">UI/UX</div>
+                            <div class="badge">Frontend development</div>
+                        </div>
+                        <p class="text-secondary">I’ve had the pleasure of working with multiple Fortune 500 companies,
+                            designing and implementing both frontend and backend.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="space-y-12 my-16">
+                <div
+                    class="rounded-3xl w-full border border-nav p-16 lg:px-32 lg:py-20 lg:space-x-32 flex justify-center lg:justify-start flex-wrap lg:flex-nowrap">
+                    <!-- client 3 -->
+
+
+                    <!-- Client logo -->
+                    <div class=" content-center  mb-6 lg:mb-0">
+                        <svg id="image1" width="80" height="96" xmlns="http://www.w3.org/2000/svg">
+                            <image href="/img/Tesla_Motors.svg.png" height="100" width="70" />
+                        </svg>
+                    </div>
+                    <!-- Client info -->
+                    <div class="flex flex-wrap justify-center text-center lg:text-left lg:block">
+                        <h3 class="text-white text-3xl font-semibold">Tesla.</h3>
+                        <div class="w-full lg:w-auto flex flex-wrap justify-center lg:justify-start gap-3 mt-6 mb-4">
+                            <div class="badge">UI/UX</div>
+                            <div class="badge">Frontend development</div>
+                        </div>
+                        <p class="text-secondary">I’ve had the pleasure of working with multiple Fortune 500 companies,
+                            designing and implementing both frontend and backend.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="container flex mt-64 justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full">
+        <section class="w-full">
+            <h1 id="hire" class=" text-4xl font-bold mb-4 secondary-title">Hire me</h1>
+            <p class="section-paragraph">Feel free to to contact me any time, through any method below.</p>
+
+            <div class="w-full grid lg:grid-cols-2 gap-8 lg:gap-32 mt-16 ">
+                <div class="space-y-12">
+                    <div>
+                        <label class="text-white block mb-6 text-xl font-bold">Name</label>
+                        <input class="w-full border border-input-border bg-input px-4 py-4"
+                            placeholder="enter your name">
+                    </div>
+                    <div>
+                        <label class="text-white block mb-6 text-xl font-bold">E-Mail</label>
+                        <input class="w-full border border-input-border bg-input px-4 py-4"
+                            placeholder="enter your E-Mail">
+                    </div>
+                    <div>
+                        <label class="text-white block mb-0 text-xl font-bold">Message</label>
+                        <input class="w-full border border-input-border bg-input px-4 py-4"
+                            placeholder="specify in simple terms what you want">
+                    </div>
+                    <div class="flex justify-start md:justify-start ml-1">
+                        <a href="#"><button class="text-bold px-8 py-2 flex  bg-blue-400 rounded-full  items-center">Send</button></a>
+                    </div>
+                </div>
+                <div class="mt-12">
+                    <!-- Contact info -->
+                    <p class="text-secondary">+316-1332-5014</p>
+                    <a href="mailto:email@mydomain.com" class="text-secondary underline mt-3 block">anass@bouallouch.com</a>
+                    <i class="fa-solid fa-person-pregnant text-3xl text-white"></i>
+                    <i class="fa-solid fa-ban-smoking text-3xl text-white"></i>
+                    <i class="fa-solid fa-biohazard text-3xl text-white"></i>
+                    <i class="fa-solid fa-cannabis text-3xl text-white"></i>
+                    <i class="fa-solid fa-child-rifle text-3xl text-white"></i>
+                </div>
+        </section>
+    </div>
+</body>
+</html>

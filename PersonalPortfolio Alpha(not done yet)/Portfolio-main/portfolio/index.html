@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <script href="index.js"></script>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@500&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://kit.fontawesome.com/f77dbedeb9.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://demos.creative-tim.com/notus-js/assets/styles/tailwind.css">
+  <link rel="stylesheet"
+    href="https://demos.creative-tim.com/notus-js/assets/vendor/@fortawesome/fontawesome-free/css/all.min.css">
+
+
+</head>
+
+<body class="bg-slate-900 text-white">
+  <!-- here i am making the header -->
+  <header class="py-6 bg-slate-800 sticky top-0 drop-shadow-2xl">
+    <div class="container flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full drop-shadow-2xl">
+      <div class="text-lg font-bold">Anass.Bouallouch</div>
+      <div class="hidden md:flex space-x-12 items-center">
+        <a href="#AboutMe">About me</a>
+        <a href="#Experience">My Experience</a>
+        <a href="#Skills">Skills</a>
+        <a href="#"><button class="px-6 py-2 font-bold bg-slate-800 rounded-full">Hire Me</button></a>
+      </div>
+      <div class="md:hidden">
+
+      </div>
+    </div>
+  </header>
+  <!-- here i am making the vertical side bar -->
+  <section class="SideBar hidden lg:block">
+    <a href=""> <i class="fa-brands fa-square-github pb-4"></i> </a>
+    <a href=""><i class="fa-brands fa-github"></i> </a>
+    <a href=""><i class="fa-brands fa-linkedin-in pb-4"></i> </a>
+    <a href=""><i class="fa-solid fa-at"></i> </a>
+
+  </section>
+
+  <!-- here i am making the content that displays my name -->
+  <section class=" mt-28 mb-64 text-white bg-slate-900 lg:ml-40 mt-28 mb-64 text-white bg-slate-900  " id="container">
+    <h2 class="text-3xl justify-start md:text-7xl "> Hi, my name is </h2>
+    <h1 class="text-3xl md:text-7xl text-slate-500 mb-7"> Anass Bouallouch.</h1>
+
+    <!-- here i am adding the text again but without wrapping it for bigger devices -->
+
+
+    <div class="justify-center w-2/5 lg:w-4/5 mt-12 break-normal text-4xl "> I am a Sofware Development student at ROC .
+    </div>
+
+
+
+  </section>
+
+
+
+
+  <!-- here i am making the about me section-->
+  <section class="" id="AboutMe">
+    <h1 class="AfterEffect text-sm mb-12 md:ml-72 text-2xl flex  mb-12">About Me</h1>
+
+    <div class="ml-0 flex lg:ml-80  mb-64  ">
+      <div class="TextContainer h-20 w-4/5   lg:w-3/5 mb-64 ">
+        <div class="ml-16 text-l md:text-lg">
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+          standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
+          make a type specimen book. It has survived not only five centuries, but also the leap into electronic
+          typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset
+          sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus
+          PageMaker including versions of Lorem Ipsu
+        </div>
+      </div>
+
+
+
+      <div class="hidden md:block">
+        <img class=" image2 rounded-md relative mr-12 shadow-lg mx-auto"
+          src="https://cdn.discordapp.com/attachments/798729001639870476/1049338920212647946/IMG_6191.jpg"
+          alt="product designer">
+      </div>
+
+
+
+  </section>
+
+
+  <!-- this is going to be the experience section -->
+
+  <section class="mb-64" id="Experience">
+    <h1 class="AfterEffect text-2xl flex md:ml-96 mb-12">My Experience</h1>
+
+    <div class="flex justify-center mb-64">
+      <div class=" h-20 w-3/5  md:w-2/5 text-l ">
+        <p>
+          If we are strictly talking about work experience I do not have a lot. I did an internship at Digital-Minds for
+          around 2.5 months it is a small company that builds E-commerce websites for businesses through the Magento
+          E-commerce platform.
+        </p>
+
+        <p class="py-6">
+          At the internship I performed mostly small tasks like editing the header and footer of a webshop. I have grown
+          a lot at this internship when I compare myself at the start versus now.
+        </p>
+
+        <p>
+          The things I enjoyed the most during this internship is learning more Front-end related coding, I learned
+          Tailwind (Which this website is made with) and a fair share of javaScript and one JavaScript framework. The JS
+          framework I used was AlpineJS which can be beautifully combined with Tailwind. While I will admit I do not
+          have a lot of experience with Javascript but I hope I can get an internship where I can learn more JavaScript
+          and JavaScript Frameworks.
+        </p>
+
+      </div>
+  </section>
+
+  <!-- this is the experience tab -->
+
+  <!-- Add a "skills" section -->
+  <div id="Skills" class="bg-slate-900 py-24" id="skills">
+    <div class=" w-3/4 container mx-auto px-6">
+      <h2 class="text-3xl font-bold text-white   mb-6">Skills</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <!-- Add a skill card for each skill -->
+        <div class=" bg-white shadow-md rounded-md p-4">
+          <h3 class="text-xl font-bold text-gray-800 mb-2">HTML/CSS</h3>
+          <p class="text-gray-700 mb-2">I have developed quite some experience with HTML/CSS over the months of using it at my previous internship and Personal projects.</p>
+          <div class="flex items-center mt-4">
+            <!-- Use the "text-blue-500" class to show progress -->
+            <div class="w-16 h-4 rounded-full bg-gray-300 mr-2">
+              <div class="w-full h-full rounded-full bg-blue-500" style="width: 80%"></div>
+            </div>
+            <p class="text-xs font-bold text-gray-700">80%</p>
+          </div>
+        </div>
+
+
+        <div class="bg-white shadow-md rounded-md p-4">
+          <h3 class="text-xl font-bold text-gray-800 mb-2">JavaScript</h3>
+          <p class="text-gray-700 mb-2">I understand all of the basics of JS. I struggle with remembering the syntax but I always have the internet to help with that. I like using JS to find solutions. Though I will admit I have not use JS in quite some time.</p>
+          <div class="flex items-center mt-4">
+            <div class="w-16 h-4 rounded-full bg-gray-300 mr-2">
+              <div class="w-full h-full rounded-full bg-blue-500" style="width: 30%"></div>
+            </div>
+            <p class="text-xs font-bold text-gray-700">30%</p>
+          </div>
+        </div>
+
+        <div class="bg-white shadow-md rounded-md p-4">
+          <h3 class="text-xl font-bold text-gray-800 mb-2">Tailwind CSS</h3>
+          <p class="text-gray-700 mb-2">I have good experience with using TailWind. I have made a couple dummy websites and one real website using TailWind(this one)</p>
+          <div class="flex items-center mt-4">
+            <div class="w-16 h-4 rounded-full bg-gray-300 mr-2">
+              <div class="w-full h-full rounded-full bg-blue-500" style="width: 75%"></div>
+            </div>
+            <p class="text-xs font-bold text-gray-700">75%</p>
+          </div>
+        </div>
+
+        <div class="bg-white shadow-md rounded-md p-4">
+          <h3 class="text-xl font-bold text-gray-800 mb-2">Python</h3>
+          <p class="text-gray-700 mb-2">I have some experience using Python with personal projects. I have made a volcano map with pytho and an API which you can see on this page</p>
+          <div class="flex items-center mt-4">
+            <div class="w-16 h-4 rounded-full bg-gray-300 mr-2">
+              <div class="w-full h-full rounded-full bg-blue-500" style="width: 50%"></div>
+            </div>
+            <p class="text-xs font-bold text-gray-700">50%</p>
+          </div>
+        </div>
+
+        <!-- <div class="bg-white shadow-md rounded-md p-4">
+          <h3 class="text-xl font-bold text-gray-800 mb-2">Python</h3>
+          <p class="text-gray-700 mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc maximus, sem a
+            ultrices vestibulum, est arcu tincidunt enim.</p>
+          <div class="flex items-center mt-4">
+            <div class="w-16 h-4 rounded-full bg-gray-300 mr-2">
+              <div class="w-full h-full rounded-full bg-blue-500" style="width: 50%"></div>
+            </div>
+            <p class="text-xs font-bold text-gray-700">50%</p>
+          </div>
+        </div> -->
+<!-- 
+        <div class="bg-white shadow-md rounded-md p-4">
+          <h3 class="text-xl font-bold text-gray-800 mb-2">Python</h3>
+          <p class="text-gray-700 mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc maximus, sem a
+            ultrices vestibulum, est arcu tincidunt enim.</p>
+          <div class="flex items-center mt-4">
+            <div class="w-16 h-4 rounded-full bg-gray-300 mr-2">
+              <div class="w-full h-full rounded-full bg-blue-500" style="width: 50%"></div>
+            </div>
+            <p class="text-xs font-bold text-gray-700">50%</p>
+          </div>
+        </div> -->
+      </div>
+    </div>
+  </div>
+
+
+  <div class="flex justif-center">
+    <img class="hidden md:block CoolImage ml-72" src="/Portfolio-main/portfolio/images/hero-devices.svg" alt="">
+  </div>
+
+  <div class="SecondColor bg-slate-00">
+    <!-- things i have worked on -->
+    <section class="" id="WorkedOn">
+      <div class="flex justify-center mb-12">
+        <h1 class="text-3xl mt-12">Here are some things I have worked on!</h1>
+      </div>
+      <div class="flex flex-row justify-center ">
+
+        <div class="tile rounded-lg">
+
+        </div>
+
+        <div class="ml-6 tile rounded-lg">
+          <img src="" alt="">
+        </div>
+
+        <div class="tile ml-6 rounded-lg">
+          <img src="">
+        </div>
+
+      </div>
+      <div class="flex flex-row justify-center py-12 pb-12">
+
+        <div class="tile rounded-lg">
+
+        </div>
+
+        <div class="ml-6 tile rounded-lg">
+          <img src="" alt="">
+        </div>
+
+        <div class="tile ml-6 rounded-lg">
+          <img src="">
+        </div>
+
+      </div>
+    </section>
+  </div>
+
+<footer class="relative  pt-8 pb-6">
+    <div class="container mx-auto px-4">
+      <div class="flex flex-wrap text-left lg:text-left">
+        <div class="w-full lg:w-6/12 px-4">
+          <h4 class="text-3xl fonat-semibold text-white">Let's keep in touch!</h4>
+          <h5 class="text-lg mt-0 mb-2 text-white">
+            Feel free to to contact me any time, through any method below.
+          </h5>
+          <input type="text" placeholder="Enter Your Email" height="150"> <button></button>
+          <div class="mt-6 lg:mb-0 mb-6">
+            </button>
+          </div>
+        </div>
+        <div class="w-full lg:w-6/12 px-4">
+          <div class="flex flex-wrap items-top mb-6">
+            <div class="w-full lg:w-4/12 px-4 ml-auto">
+              <span class="block uppercase text-white text-sm font-semibold mb-2">Useful Things</span>
+              <ul class="list-unstyled">
+                <li>
+                  <a class="text-blueGray-400 hover:text-white font-semibold block pb-2 text-sm"
+                    href="#AboutMe">About Me</a>
+                </li>
+                <li>
+                  <a class="text-blueGray-400 hover:text-white font-semibold block pb-2 text-sm"
+                    href="#">I.bouallouchanass@outlook.com</a>
+                </li>
+                <li>
+                  <a class="text-blueGray-400 hover:text-white font-semibold block pb-2 text-sm"
+                    href="#">0622419015</a>
+                </li>
+                <li>
+                  <a class="text-blueGray-400 hover:text-white font-semibold block pb-2 text-sm"
+                    href="#">Github</a>
+                </li>
+              </ul>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+      <hr class="my-6 border-blueGray-300">
+      <div class="flex flex-wrap items-center md:justify-between justify-center">
+        <div class="w-full md:w-4/12 px-4 mx-auto text-center">
+          <div class="text-sm text-blueGray-500 font-semibold py-1">
+            Copyright © <span id="get-current-year">2022</span><a href="https://www.creative-tim.com/product/notus-js"
+              class="text-blueGray-500 hover:text-gray-800" target="_blank">
+              <a href="https://www.creative-tim.com?ref=njs-profile"
+                class="text-blueGray-500 hover:text-white">Anass.Bouallouch</a>.
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
